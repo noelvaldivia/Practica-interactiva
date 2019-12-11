@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elementos interactivost</title>
+</head>
+<body>
+    <header> <h1>Elementos Interactivos</h1> </header>
+
+    <main>
+<section>
+    <p>La que se avecina termina... </p>
+
+    <details>
+      <summary>Pulsa si quieres saber el final</summary>
+      <p>Todo era un sueño. </p>
+</section>
+<section>
+    <h3>Formulario de matricula</h3> 
+    <details open >
+      <summary>Datos personales</summary>
+      <p>Nombre: <input type="text" name="nombre"></p>
+      <p>Apellidos: <input type="text" name="apellidos" >     </p>
+    </details>
+    
+    <details> 
+      <summary>Situacion actual</summary>
+      <p>Empresa: <input type="text" name="empresa"></p>
+    </details>
+</section>
+<section>
+    <p>ASIR es un ciclo de grado superior</p>
+    <details>
+         <summary>Asignaturas</summary>
+        <ul>
+          <li>GBD</li>
+          <li>FH</li>
+          <li>FOL</li>
+          </ul>
+      </details>
+</section>
+<section>
+      
+                <h2>Notas</h2>
+                           
+                <dialog id="dialog-1">
+                        <h1>Notas</h1>
+                      
+                        <p>10</p>
+                      
+                        <p>
+                          <input type="button" value="Cerrar" onclick="document.getElementById('dialog-1').removeAttribute('open')">
+                        </p>
+                      </dialog>
+                      
+                      <p>
+                        <input type="button" value="Muestra Notas" onclick="document.getElementById('dialog-1').setAttribute('open', 'open')">
+                      </p>
+</section>
+    </main>
+</body>
+</html>
